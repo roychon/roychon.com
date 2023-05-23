@@ -1,0 +1,198 @@
+:root {
+    --bcolor: rgb(0, 0, 0);
+    --maincolor: #ccd6f6;
+    --greycolor: #8892b0;
+    --linear: linear-gradient(to right, #757f9a, #d7dde8);
+    --aCol: rgb(191, 248, 239);
+}
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* Home Page */
+header {
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    width: 100%;
+}
+
+header ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    color: rgb(191, 248, 239);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--maincolor);
+    font-size: 20px;
+}
+
+body {
+    background-color: var(--bcolor);
+    color: white;
+    font-family: sans-serif;
+    margin: 0 50px;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.squish {
+    letter-spacing: -3px;
+    font-size: 80px;
+    font-weight: bold;
+    color: lightcyan;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.squish span {
+    display: inline-block; /* to allow animation */
+}
+
+.squish p {
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: var(--maincolor);
+}
+
+.squish span.animated {
+    transition: color 1s;
+    color: var(--maincolor);
+    animation: squish 0.9s ease-in-out 1;
+}
+
+/* animation for bubble effect on text */
+@keyframes squish {
+    0% {
+        transform: scaleY(1);
+    }
+
+    80% {
+        transform: scaleY(0.8) scaleX(1.2);
+    }
+
+    85% {
+        transform: scaleY(1.2) scaleX(1);
+    }
+    95% {
+        transform: scaleY(0.8) scaleX(1.2);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+.squish span {
+    opacity: 0;
+    transform: translateX(-300px);
+}
+
+.bigText span.fade {
+    opacity: 1;
+    transition: all 1.5s ease;
+    transform: translateX(0);
+}
+
+.gradient-text span.fade {
+    opacity: 1;
+    transition: all .2s .7s ease;
+    transform: translateX(0);
+}
+
+.light-gradient {
+    /* background: #355c7d; 
+    background: -webkit-linear-gradient(
+        to right,
+        #f0f2f0,
+        #000c40
+    ); 
+    background: linear-gradient(
+        to right,
+        #f0f2f0,
+        #000c40
+    );  */
+    background: #a8c0ff;
+    background: -webkit-linear-gradient(to left, #3f2b96, #fff);
+    background: linear-gradient(to left, #3f2b96, #fff);
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-text {
+    /* background-image: var(--linear);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    font-size: 45px;
+    font-weight: bold;
+    font-family: sans-serif;
+    width: 61.5%;
+    color: #cfc9f0;
+}
+
+.gradient-text span.animated {
+    color: white;
+}
+
+.contact {
+    width: 250px;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid lightcyan;
+}
+
+.social-links {
+    height: 100%;
+    position: fixed;
+    margin-right: 25px;
+    right: 0;
+}
+
+.social-links ul::before {
+    content: "";
+    margin-top: 350px;
+}
+
+.social-links ul{
+    font-size: 35px;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.social-links ul i {
+    transition: 1s;
+}
+
+.social-links ul i:hover {
+    /* color: var(--maincolor); */
+    transform: translateY(-10px);
+}
+
+.social-links ul::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 300px;
+    margin: 0px auto;
+    background-color: rgb(168, 178, 209);
+    animation: transformUp 5s 1 ease-in-out;
+}
