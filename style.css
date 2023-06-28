@@ -857,4 +857,12 @@ section:not(:first-of-type) {
         font-size: 20px;
     }
 
+    #home .word-text{
+        line-height: 70px;
+    }
+
+    #home h2.small {
+        line-height: 30px;
+    }
+
 }
