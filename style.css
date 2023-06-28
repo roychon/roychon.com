@@ -853,7 +853,7 @@ section:not(:first-of-type) {
     }
 
     #skills p, #skills.gradient1, #skills.gradient2{
-        font-weight: 600;
+        font-weight: 500;
         font-size: 20px;
     }
 
