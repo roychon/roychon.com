@@ -325,7 +325,6 @@ section:not(:first-of-type) {
     margin-top: 1em;
     font-size: 20px;
     font-family: 'Poppins';
-    /* font-weight: bold; */
 }
 
 .text a {
@@ -843,6 +842,7 @@ section:not(:first-of-type) {
     .small {
         /* font-size: 2rem; */
         letter-spacing: -4px;
+        /* line-height: 30px; */
     }
     .contact {
         width: 150px;
@@ -853,16 +853,16 @@ section:not(:first-of-type) {
     }
 
     #skills p, #skills.gradient1, #skills.gradient2{
-        /* font-weight: 500; */
         font-size: 20px;
     }
 
     #home .word-text{
         line-height: 70px;
     }
-r
-    #home h2.small {
+
+    #home h2.small.squish {
         line-height: 30px;
     }
+    
 
 }
