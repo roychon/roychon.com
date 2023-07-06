@@ -112,6 +112,7 @@ socials.classList.add("fade");
 
 // rotating text sphere
 const myTags = [
+    "Python",
     "JavaScript",
     "CSS",
     "HTML",
@@ -122,10 +123,8 @@ const myTags = [
     "git",
     "PHP",
     "MySQL",
-    "jQuery",
+    "Figma",
     "Racket",
-    "Tailwind.css",
-    "Linux",
     "Bootstrap",
 ];
 
