@@ -118,14 +118,17 @@ const myTags = [
     "HTML",
     "C",
     "C++",
-    "React.js",
+    "React",
+    "Express.js",
+    "Node.js",
+    "MongoDB",
+    "Mongoose",
     "Java",
     "git",
     "PHP",
     "MySQL",
-    "Figma",
     "Racket",
-    "Bootstrap",
+    "Linux"
 ];
 
 var tagCloud = TagCloud(".content", myTags, {
