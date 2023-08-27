@@ -1,1 +1,1 @@
-My personal website, check it out! [Devpost Page](https://roychon.github.io)
+My personal website, [check it out!](https://roychon.github.io)
