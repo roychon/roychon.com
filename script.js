@@ -113,6 +113,7 @@ socials.classList.add("fade");
 // rotating text sphere
 const myTags = [
     "Python",
+    "Typescript",
     "JavaScript",
     "CSS",
     "HTML",
@@ -124,11 +125,22 @@ const myTags = [
     "MongoDB",
     "Mongoose",
     "Java",
-    "git",
+    "Git",
     "PHP",
     "MySQL",
     "Racket",
-    "Linux"
+    "Linux",
+    "Azure",
+    "AWS",
+    "Docker",
+    "Tailwind",
+    "OpenCV",
+    "numpy",
+    "matplotlib",
+    "Laravel",
+    "Flask",
+    "LangChain".
+    "PostgreSQL"
 ];
 
 var tagCloud = TagCloud(".content", myTags, {
