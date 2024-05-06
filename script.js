@@ -139,7 +139,7 @@ const myTags = [
     "matplotlib",
     "Laravel",
     "Flask",
-    "LangChain".
+    "LangChain",
     "PostgreSQL"
 ];
 
